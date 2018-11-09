@@ -1,0 +1,31 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "label": "TicTacToe",
+            "type": "shell",
+            "command": "gcc",
+            "args": [
+                "-std=c99",
+                "-fno-builtin",
+                "-g",
+                "interacao.c",
+                "tabela.c",
+                "ai.c",
+                "TicTacToe.c",
+                "-lm",
+                "-o",
+                "TicTacToe.out"
+            ],
+            "problemMatcher": [
+                "$gcc"
+            ]
+        }
+    ],
+    "group": {
+        "kind": "build",
+        "isDefault": true
+    }
+}
